@@ -43,4 +43,7 @@ def get_average_age_for_season(data, season)
   b = 0 
   data[season].each do |info|
     a += info["age"].to_i 
+    b += 1 
+  end 
+  return a/b 
 end
