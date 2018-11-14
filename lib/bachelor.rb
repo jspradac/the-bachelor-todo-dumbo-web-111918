@@ -11,6 +11,9 @@ def get_contestant_name(data, occupation)
     players.each do |info|
       if (info.values).include?(occupation)
         return info["name"]
+      end
+    end
+  end
 end
 
 def count_contestants_by_hometown(data, hometown)
